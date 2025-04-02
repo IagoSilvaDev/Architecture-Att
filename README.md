@@ -92,7 +92,7 @@ O diagrama a seguir ilustra a replicação dos componentes do ambiente atual na 
   - **Amazon S3**: Armazena backups, logs e dados temporários.  
   - **Amazon VPC, IAM, KMS e CloudWatch**: Asseguram o isolamento, controle de acesso, criptografia e monitoramento da infraestrutura.
 
-### Como Adicionar o Diagrama
+### Diagrama da Migração
 
    ![Diagrama da Infraestrutura](./imgs/AWS_Migration.drawio.png)
    
