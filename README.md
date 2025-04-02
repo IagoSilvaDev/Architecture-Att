@@ -1,6 +1,3 @@
-Segue abaixo o documento revisado, com a correção da imagem da VPN, mais detalhes sobre os serviços e instruções de como adicionar o diagrama:
-
----
 
 # Documentação do Projeto de Migração – Fast Engineering S/A
 
