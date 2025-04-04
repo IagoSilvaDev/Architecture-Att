@@ -1,10 +1,9 @@
----
+
 
 # TI Soluções Incríveis - Projeto de Migração Fast Engineering S/A
 
 ![CloudPress Compass](https://vetores.org/d/compass-uol.svg)
 
----
 
 ## 1. Contexto
 
@@ -23,9 +22,9 @@ A infraestrutura on-premise atual inclui:
 
 ## 2. Etapa 1: Lift-and-Shift (As-Is)
 
-### 2.1 Arquitetura AWS
+### 2.1 Arquitetura de Migração
 
-![Diagrama da Infraestrutura](./imgs/AWS_Migration.drawio.png)
+![Diagrama da Infraestrutura](./imgs/DIagram_Migration.png)
 
 ### 2.2 Componentes e Funcionamento
 
@@ -94,13 +93,13 @@ A infraestrutura on-premise atual inclui:
 | <img src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Client-VPN.svg" width="50" alt="AWS VPN"> | **AWS VPN** | Estabelece conexões seguras entre o ambiente on-premise e a AWS, garantindo a transferência segura dos dados. |
 | <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64.png" width="50" alt="Amazon CloudWatch"> | **Amazon CloudWatch** | Oferece monitoramento e observabilidade com coleta de métricas, logs e eventos para acompanhar a performance e integridade dos recursos. |
 
+## Arquitetura Lift-and-Shift
+
+![Diagrama Modernização](imgs/Diagram-Lift-and-Shift.png)
+
 ---
 
-## 3. Etapa 2: Modernização (EKS e CI/CD)
-
-### 3.1 Arquitetura AWS
-
-![Diagrama Modernização](imgs/Modern_architecture_eks.drawio.png)
+## 3. Etapa 2: Modernização 
 
 ### 3.2 Componentes e Funcionamento
 
@@ -138,11 +137,12 @@ A infraestrutura on-premise atual inclui:
 
 | Ícone | Serviço | Descrição |
 |:-----:|---------|-----------|
-| <img src="https://d1.awsstatic.com/icons/jp/console_eks_icon.67a5d60f7b4fc9b6b0ccb1e3c5aeabc5f8b8d4a7.png" width="50" alt="Amazon EKS"> | **Amazon EKS** | Orquestração de containers para Frontend e Backend. |
-| <img src="https://d1.awsstatic.com/icons/jp/console_codepipeline_icon.67a5d60f7b4fc9b6b0ccb1e3c5aeabc5f8b8d4a7.png" width="50" alt="AWS CodePipeline"> | **AWS CodePipeline** | Pipeline de CI/CD que automatiza os deployments. |
-| <img src="https://d1.awsstatic.com/icons/jp/console_ecr_icon.67a5d60f7b4fc9b6b0ccb1e3c5aeabc5f8b8d4a7.png" width="50" alt="Amazon ECR"> | **Amazon ECR** | Registro de imagens Docker com escaneamento de segurança. |
-| <img src="https://d1.awsstatic.com/icons/jp/console_route53_icon.67a5d60f7b4fc9b6b0ccb1e3c5aeabc5f8b8d4a7.png" width="50" alt="Route 53"> | **Route 53** | Gerencia DNS e roteamento para o ALB. |
+| <img src="https://icon.icepanel.io/AWS/svg/Containers/EKS-Cloud.svg" width="50" alt="Amazon EKS"> | **Amazon EKS** | Orquestração de containers para Frontend e Backend. |
+| <img src="https://icon.icepanel.io/AWS/svg/Developer-Tools/CodePipeline.svg" width="50" alt="AWS CodePipeline"> | **AWS CodePipeline** | Pipeline de CI/CD que automatiza os deployments. |
+| <img src="https://icon.icepanel.io/AWS/svg/Containers/Elastic-Container-Registry.svg" width="50" alt="Amazon ECR"> | **Amazon ECR** | Registro de imagens Docker com escaneamento de segurança. |
+| <img src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Route-53.svg" width="50" alt="Route 53"> | **Route 53** | Gerencia DNS e roteamento para o ALB. |
 | <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64.png" width="50" alt="Amazon CloudWatch"> | **Amazon CloudWatch** | Monitoramento centralizado de métricas e logs. |
+| <img src="https://icon.icepanel.io/AWS/svg/Storage/Backup.svg" width="50" alt="AWS Backup"> | **Amazon Backup** | Automatização de backups para EC2, EBS e RDS. |
 
 ---
 
@@ -167,7 +167,8 @@ A infraestrutura on-premise atual inclui:
 
 - **RDS:** Snapshots automáticos diários  
 - **S3:** Versionamento e lifecycle policies para arquivos estáticos  
-- **EKS:** Backup de configurações via Velero
+- **EKS:** Backup de configurações
+- **Amazon Backup:** Automatização de backups para EC2, EBS e RDS.
 
 ---
-
+![Diagrama Modernização](imgs/Diagram_Modern_Architeture.png)
