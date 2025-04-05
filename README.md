@@ -116,7 +116,7 @@ A infraestrutura on-premise atual inclui:
 - **Custo Mensal Total:** 501,06 USD  
 - **Custo Anual (12 meses):** 6.012,72 USD  
 
-[Link do Orçamento da Migração](https://calculator.aws/#/estimate?id=a130532c90c080f1ed92fa0ffc18c16b2a94db56)
+[Orçamento da Migração](https://calculator.aws/#/estimate?id=a130532c90c080f1ed92fa0ffc18c16b2a94db56)
 
 ## Arquitetura Lift-and-Shift
 
@@ -137,7 +137,7 @@ A infraestrutura on-premise atual inclui:
 - **Custo Mensal Total:** 296,98 USD  
 - **Custo Anual (12 meses):** 3.563,76 USD  
 
-[Link do Orçamento da Pós-Migração](https://calculator.aws/#/estimate?id=bfcf48e230398f658823a4afa4690de4c9b81624)
+[Orçamento da Pós-Migração](https://calculator.aws/#/estimate?id=bfcf48e230398f658823a4afa4690de4c9b81624)
 
 ---
 
@@ -240,7 +240,7 @@ A infraestrutura on-premise atual inclui:
 - **Custo Mensal Total:** 2.337,64 USD *(ajustado após remoção do CodeDeploy)*  
 - **Custo Anual (12 meses):** 28.051,68 USD
   
-  [Link do Orçamento da Modernização](https://calculator.aws/#/estimate?id=4905e10240762188ca7d4e71aa938b5e244010b3)
+  [Orçamento da Modernização](https://calculator.aws/#/estimate?id=4905e10240762188ca7d4e71aa938b5e244010b3)
 
 Aqui está a seção final com os dados de contato fictícios:
 
