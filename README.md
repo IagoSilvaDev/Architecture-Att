@@ -240,7 +240,7 @@ A infraestrutura on-premise atual inclui:
 - **Custo Mensal Total:** 2.337,64 USD *(ajustado após remoção do CodeDeploy)*  
 - **Custo Anual (12 meses):** 28.051,68 USD
   
-  [Link do Orçamento da Pós-Migração](https://calculator.aws/#/estimate?id=4905e10240762188ca7d4e71aa938b5e244010b3)
+  [Link do Orçamento da Modernização](https://calculator.aws/#/estimate?id=4905e10240762188ca7d4e71aa938b5e244010b3)
 
 Aqui está a seção final com os dados de contato fictícios:
 
