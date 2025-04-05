@@ -241,3 +241,24 @@ A infraestrutura on-premise atual inclui:
 - **Custo Anual (12 meses):** 28.051,68 USD
   
   [Link do Orçamento da Pós-Migração](https://calculator.aws/#/estimate?id=4905e10240762188ca7d4e71aa938b5e244010b3)
+
+Aqui está a seção final com os dados de contato fictícios:
+
+---
+
+## Entre em Contato
+
+Para mais informações sobre este projeto ou para solicitar suporte técnico, entre em contato com a equipe da **TI SOLUÇÕES INCRÍVEIS**:
+
+**Informações de Contato:**
+- 📧 E-mail: [ti.solucoes.incriveis@fastengineering.com](mailto:ti.solucoes.incriveis@fastengineering.com)
+- 📞 Telefone: +55 (11) 1234-4321 (das 8h às 18h, horário de Brasília)
+- 🌐 Site: [www.tisolucoesincriveis.com.br](https://www.tisolucoesincriveis.com.br)
+
+**Endereço Corporativo:**  
+Av. das Migrações Cloud, 1001 - Conjunto 200  
+---
+
+![ti soluçoes incriveis](imgs/tisoluçoes.png)
+
+
