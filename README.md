@@ -242,8 +242,6 @@ A infraestrutura on-premise atual inclui:
   
   [Orçamento da Modernização](https://calculator.aws/#/estimate?id=4905e10240762188ca7d4e71aa938b5e244010b3)
 
-Aqui está a seção final com os dados de contato fictícios:
-
 ---
 
 ## Entre em Contato
