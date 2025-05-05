@@ -215,6 +215,154 @@ A infraestrutura on-premise atual inclui:
 ---
 ![Diagrama Modernização](imgs/Diagram_Modern_Architeture.png)
 
+
+# 📌 Quadro do Projeto: Migração Fast Engineering S/A para AWS
+
+![Projeto](imgs/projeto.png)
+
+## 📋 Listas (Fases do Projeto)
+- [Planejamento Inicial](#planejamento-inicial)
+- [Etapa 1: Lift-and-Shift (As-Is)](#etapa-1-lift-and-shift-as-is)
+- [Etapa 2: Modernização (EKS, CI/CD, Autoscaling)](#etapa-2-modernização-eks-cicd-autoscaling)
+- [Segurança & Compliance](#segurança--compliance)
+- [Orçamento & Custos](#orçamento--custos)
+- [Pós-Migração & Otimização](#pós-migração--otimização)
+
+---
+
+### 📝 Planejamento Inicial
+<details>
+<summary>📌 Definir Escopo</summary>
+- Validar requisitos de escalabilidade e desempenho.
+- Mapear arquitetura on-premise atual.
+- Definir metas de SLA pós-migração.
+</details>
+
+<details>
+<summary>📌 Equipe & Responsáveis</summary>
+- Atribuir papéis (Engenheiros de DevOps, Arquitetos, Segurança).
+- Agendar reuniões de alinhamento semanais.
+</details>
+
+<details>
+<summary>📌 Documentação</summary>
+- Criar diagramas de arquitetura (VPC, EC2, RDS, etc.).
+- Registrar políticas de segurança e backup.
+</details>
+
+---
+
+### 🔧 Etapa 1: Lift-and-Shift (As-Is)
+<details>
+<summary>🔧 Infraestrutura na AWS</summary>
+- Configurar VPC com sub-redes públicas/privadas (2 AZs).
+- Implementar NAT Gateway e Application Load Balancer (ALB).
+- Configurar Network ACL e WAF para proteção contra ataques.
+</details>
+
+<details>
+<summary>🖥️ Migração de Servidores</summary>
+- Usar AWS Application Migration Service para replicar Frontend (t3.small) e Backend (t3.medium).
+- Validar configurações de armazenamento (EBS, S3).
+</details>
+
+<details>
+<summary>🗄️ Migração de Dados</summary>
+- Configurar AWS DMS para replicar MySQL para RDS (db.t3.medium).
+- Validar integridade dos dados com checksums.
+</details>
+
+<details>
+<summary>📊 Monitoramento</summary>
+- Configurar CloudWatch para métricas de CPU, RAM e latência.
+- Criar alertas para thresholds críticos (CPU >80%, latência ALB >500ms).
+</details>
+
+---
+
+### 🧱 Etapa 2: Modernização (EKS, CI/CD, Autoscaling)
+<details>
+<summary>🧱 Kubernetes (EKS)</summary>
+- Criar cluster EKS com namespaces frontend (3 réplicas) e backend (autoscaling de 2-10 pods).
+- Configurar Ingress Controller com ALB e integração ao WAF.
+</details>
+
+<details>
+<summary>🚀 CI/CD Pipeline</summary>
+- Implementar CodePipeline: CodeCommit → CodeBuild → ECR → EKS.
+- Configurar gatilho automático para pushes na branch `main`.
+</details>
+
+<details>
+<summary>📈 Autoscaling</summary>
+- Configurar Horizontal Pod Autoscaler (HPA) para uso de CPU (meta: 70%).
+- Implementar Cluster Autoscaler para ajuste dinâmico de nós.
+</details>
+
+<details>
+<summary>🛡️ Segurança Modernizada</summary>
+- Integrar Secrets Manager para gerenciar credenciais do RDS.
+- Atualizar criptografia em trânsito (TLS 1.3) e repouso (KMS).
+</details>
+
+---
+
+### 🔒 Segurança & Compliance
+<details>
+<summary>🔒 Criptografia</summary>
+- Validar TLS 1.3 em ALB, EKS e RDS.
+- Ativar criptografia AES-256 para EBS e S3.
+</details>
+
+<details>
+<summary>🔐 Controle de Acesso</summary>
+- Configurar IAM Roles para EC2 (permissões mínimas).
+- Restringir acesso ao RDS apenas via APIs.
+</details>
+
+<details>
+<summary>🔄 Backup & Recuperação</summary>
+- Configurar backups automáticos do RDS (7 dias de retenção).
+- Ativar versionamento no S3 e lifecycle policies.
+- Implementar AWS Backup para EC2, EBS e RDS.
+</details>
+
+---
+
+### 💰 Orçamento & Custos
+<details>
+<summary>💰 Custos Estimados</summary>
+- Comparar orçamentos: Lift-and-Shift ($501/mês) vs. Modernização ($2.337/mês).
+- Monitorar custos com Cost Explorer e Budgets.
+</details>
+
+<details>
+<summary>📉 Otimização de Custos</summary>
+- Revisar instâncias EC2 para ajustar tamanho (ex.: migrar para t3a).
+- Avaliar uso de Spot Instances para ambientes de teste.
+</details>
+
+---
+
+### ✅ Pós-Migração & Otimização
+<details>
+<summary>✅ Validação Final</summary>
+- Testar carga e desempenho sob alta demanda.
+- Validar failover Multi-AZ no RDS e EKS.
+</details>
+
+<details>
+<summary>📋 Documentação Final</summary>
+- Atualizar diagramas de arquitetura pós-modernização.
+- Registrar procedimentos de manutenção e disaster recovery.
+</details>
+
+<details>
+<summary>📈 Melhorias Contínuas</summary>
+- Implementar análises de logs com CloudWatch Logs Insights.
+- Explorar uso de Lambda para automações event-driven.
+</details>
+
 # Orçamento AWS - Resumo
 
 | Serviço AWS                  | Custo Mensal (USD) | Descrição/Configuração                                                                 |
