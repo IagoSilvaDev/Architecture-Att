@@ -1,4 +1,4 @@
-
+![prod](https://github.com/user-attachments/assets/a0f44dd1-3062-400c-9b61-3dd410b72d8c)
 
 # TI Soluções Incríveis - Projeto de Migração Fast Engineering S/A
 
@@ -214,6 +214,57 @@ A infraestrutura on-premise atual inclui:
 
 ---
 ![Diagrama Modernização](imgs/Diagram_Modern_Architeture.png)
+
+## 4. Ambientes
+
+### 4.1 Ambiente de Desenvolvimento (Dev/Test)
+
+![Dev_Test](imgs/dev_test.png)
+
+- **Recursos:**
+  - Cluster EKS em uma Organizational Unit (Dev/Test OU) separada.
+  - Deploys automáticos via GitHub Actions + Terraform para instâncias ou namespaces isolados.
+  - Banco de dados RDS (single‑AZ) com dados de teste.
+  - Bucket S3 para artefatos temporários e logs.
+- **Políticas de Segurança:**
+  - IAM roles de acesso restrito (privilégio mínimo).
+  - Network ACLs mais permissivos para facilitar testes internos.
+
+### 4.2 Ambiente de Homologação (Staging)
+
+![Homologação](imgs/homo.png)
+
+- **Recursos:**
+  - Várias Availability Zones (AZs) para testar alta disponibilidade.
+  - Infraestrutura quase idêntica à de produção:
+    - Deploy de frontend e backend em namespaces `frontend` e `backend` no EKS.
+    - Serviços e ingress via ALB + WAF.
+    - RDS MySQL com Multi‑AZ.
+    - Bucket S3 com versionamento ativado.
+- **Políticas de Segurança:**
+  - Network ACLs restritivos (apenas 443/HTTPS e 22/SSH de VPN).
+  - WAF ativo no ALB.
+  - Uso de Secret Manager e KMS para gerenciamento de segredos.
+
+### 4.3 Ambiente de Produção (Prod)
+
+![Produção](imgs/prod.png)
+
+- **Recursos:**
+  - Organização em OU (Prod OU) dentro do AWS Organizations.
+  - VPC distribuída em 2 AZs com sub‑redes públicas e privadas.
+  - ALB + WAF + Route 53 redundante.
+  - EKS Cluster dedicado com namespaces de frontend e backend.
+  - Auto Scaling:
+    - HPA (min:3, max:10 pods para backend).
+    - Cluster Autoscaler para ajustar nós conforme demanda.
+  - RDS MySQL Multi‑AZ com replicação cross‑AZ e backups contínuos.
+  - Replicação de dados de imagem/log para bucket S3 e serviço de Backup dedicado.
+- **Políticas de Segurança:**
+  - Network ACLs e Security Groups restritivos.
+  - IAM Roles e Policies de privilégio mínimo.
+  - Secret Manager, KMS e GuardDuty ativos.
+  - Monitoramento avançado com CloudWatch, Trusted Advisor e Config.
 
 
 # 📌 Quadro do Projeto: Migração Fast Engineering S/A para AWS
