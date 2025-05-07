@@ -221,7 +221,7 @@ A infraestrutura on-premise atual inclui:
 ## 4. Ambientes
 
 ### 4.1 Ambiente de Desenvolvimento (Dev/Test)
-  ![Dev_Test](imgs/dev_test.png)
+  ![Dev_Test](imgs/Ambiente_Dev_Test.png)
   
 - **Recursos:**
   - Cluster EKS em uma Organizational Unit (Dev/Test OU) separada.
@@ -233,7 +233,7 @@ A infraestrutura on-premise atual inclui:
   - Network ACLs mais permissivos para facilitar testes internos.
 
 ### 4.2 Ambiente de Homologação (Staging)
-![Homologação](imgs/homo.png)
+![Homologação](imgs/Ambiente_Homologação.png)
 
 - **Recursos:**
   - Várias Availability Zones (AZs) para testar alta disponibilidade.
@@ -248,7 +248,7 @@ A infraestrutura on-premise atual inclui:
   - Uso de Secret Manager e KMS para gerenciamento de segredos.
 
 ### 4.3 Ambiente de Produção (Prod)
-![Produção](imgs/prod.png)
+![Produção](imgs/Ambiente_Produção.png)
 
 - **Recursos:**
   - Organização em OU (Prod OU) dentro do AWS Organizations.
