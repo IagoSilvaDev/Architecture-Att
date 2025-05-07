@@ -22,7 +22,10 @@ A infraestrutura on-premise atual inclui:
 
 ### 2.1 Arquitetura de Migração
 
-![Diagrama da Infraestrutura](./imgs/DIagram_Migration.png)
+
+
+
+  ![Diagrama da Infraestrutura](imgs/DIagram_Migration.png)
 
 
 
@@ -120,7 +123,7 @@ A infraestrutura on-premise atual inclui:
 
 ## Arquitetura Lift-and-Shift
 
-![Diagrama Modernização](imgs/Diagram-Lift-and-Shift.png)
+   ![Diagrama Modernização](imgs/Diagram-Lift-and-Shift.png)
 
 # Orçamento Pós-Migração AWS - Resumo  
 
@@ -213,14 +216,13 @@ A infraestrutura on-premise atual inclui:
 - **Amazon Backup:** Automatização de backups para EC2, EBS e RDS.
 
 ---
-![Diagrama Modernização](imgs/Diagram_Modern_Architeture.png)
+  ![Diagrama Modernização](imgs/Diagram_Modern_Architeture.png)
 
 ## 4. Ambientes
 
 ### 4.1 Ambiente de Desenvolvimento (Dev/Test)
-
-![Dev_Test](imgs/dev_test.png)
-
+  ![Dev_Test](imgs/dev_test.png)
+  
 - **Recursos:**
   - Cluster EKS em uma Organizational Unit (Dev/Test OU) separada.
   - Deploys automáticos via GitHub Actions + Terraform para instâncias ou namespaces isolados.
@@ -231,7 +233,6 @@ A infraestrutura on-premise atual inclui:
   - Network ACLs mais permissivos para facilitar testes internos.
 
 ### 4.2 Ambiente de Homologação (Staging)
-
 ![Homologação](imgs/homo.png)
 
 - **Recursos:**
@@ -247,7 +248,6 @@ A infraestrutura on-premise atual inclui:
   - Uso de Secret Manager e KMS para gerenciamento de segredos.
 
 ### 4.3 Ambiente de Produção (Prod)
-
 ![Produção](imgs/prod.png)
 
 - **Recursos:**
@@ -271,7 +271,7 @@ A infraestrutura on-premise atual inclui:
 
 
 
-![Projeto](imgs/projeto.png)
+   ![Projeto](imgs/projeto.png)
 
 
 ## 📋 Listas (Fases do Projeto)
