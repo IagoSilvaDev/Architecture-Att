@@ -447,8 +447,9 @@ A infraestrutura on-premise atual inclui:
 
 ### Totais
 - **Custo Inicial Total:** 0,00 USD  
-- **Custo Mensal Total:** 2.337,64 USD   
-- **Custo Anual (12 meses):** 28.051,68 USD
+- **Custo Mensal Total:** 2.399,06 USD
+- **Custo Anual (12 meses):** 28.788,72 USD 
+
   
   [Orçamento da Modernização](https://calculator.aws/#/estimate?id=d7a8154a3aa306ec96f810cf16c2b3e8d4afe6df)
 
