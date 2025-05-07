@@ -119,8 +119,10 @@ A infraestrutura on-premise atual inclui:
 [Orçamento da Migração](https://calculator.aws/#/estimate?id=a130532c90c080f1ed92fa0ffc18c16b2a94db56)
 
 ## Arquitetura Lift-and-Shift
+![Diagrama Modernização](imgs/Diagram-Lift-and-Shift.png)
 
-   ![Diagrama Modernização](imgs/Diagram-Lift-and-Shift.png)
+
+
 
 # Orçamento Pós-Migração AWS - Resumo  
 
