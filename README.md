@@ -1,5 +1,3 @@
-![prod](https://github.com/user-attachments/assets/a0f44dd1-3062-400c-9b61-3dd410b72d8c)
-
 # TI Soluções Incríveis - Projeto de Migração Fast Engineering S/A
 
 ![CloudPress Compass](https://vetores.org/d/compass-uol.svg)
@@ -25,6 +23,8 @@ A infraestrutura on-premise atual inclui:
 ### 2.1 Arquitetura de Migração
 
 ![Diagrama da Infraestrutura](./imgs/DIagram_Migration.png)
+
+
 
 ### 2.2 Componentes e Funcionamento
 
@@ -269,7 +269,10 @@ A infraestrutura on-premise atual inclui:
 
 # 📌 Quadro do Projeto: Migração Fast Engineering S/A para AWS
 
+
+
 ![Projeto](imgs/projeto.png)
+
 
 ## 📋 Listas (Fases do Projeto)
 - [Planejamento Inicial](#planejamento-inicial)
