@@ -185,6 +185,12 @@ A infraestrutura on-premise atual inclui:
 | <img src="https://icon.icepanel.io/AWS/svg/Networking-Content-Delivery/Route-53.svg" width="50" alt="Route 53"> | **Route 53** | Gerencia DNS e roteamento para o ALB. |
 | <img src="https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64.png" width="50" alt="Amazon CloudWatch"> | **Amazon CloudWatch** | Monitoramento centralizado de métricas e logs. |
 | <img src="https://icon.icepanel.io/AWS/svg/Storage/Backup.svg" width="50" alt="AWS Backup"> | **Amazon Backup** | Automatização de backups para EC2, EBS e RDS. |
+| <img src="https://icon.icepanel.io/AWS/svg/Management-Governance/CloudTrail.svg" width="50" alt="AWS CloudTrail"> | **AWS CloudTrail** | Registro de atividades e chamadas de API na conta. |
+| <img src="https://icon.icepanel.io/AWS/svg/Management-Governance/Trusted-Advisor.svg" width="50" alt="AWS Trusted Advisor"> | **AWS Trusted Advisor** | Recomendações de boas práticas de segurança, performance e custo. |
+| <img src="https://icon.icepanel.io/AWS/svg/Management-Governance/Config.svg" width="50" alt="AWS Config"> | **AWS Config** | Avaliação e auditoria da conformidade da infraestrutura. |
+| <img src="https://icon.icepanel.io/AWS/svg/Cloud-Financial-Management/Cost-Explorer.svg" width="50" alt="AWS Cost Explorer"> | **AWS Cost Explorer** | Análise e visualização dos custos e uso dos serviços. |
+| <img src="https://icon.icepanel.io/AWS/svg/Management-Governance/Organizations.svg" width="50" alt="AWS Organizations"> | **AWS Organizations** | Gerenciamento centralizado de múltiplas contas AWS. |
+| <img src="https://icon.icepanel.io/AWS/svg/Security-Identity-Compliance/GuardDuty.svg" width="50" alt="Amazon GuardDuty"> | **Amazon GuardDuty** | Detecção inteligente de ameaças com machine learning. |
 
 ---
 
@@ -441,7 +447,7 @@ A infraestrutura on-premise atual inclui:
 - **Custo Mensal Total:** 2.337,64 USD *(ajustado após remoção do CodeDeploy)*  
 - **Custo Anual (12 meses):** 28.051,68 USD
   
-  [Orçamento da Modernização](https://calculator.aws/#/estimate?id=4905e10240762188ca7d4e71aa938b5e244010b3)
+  [Orçamento da Modernização](https://calculator.aws/#/estimate?id=0a52db2e4005bc1c1abfeb92a83f73cf01991044)
 
 ---
 
