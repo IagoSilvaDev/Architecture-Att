@@ -22,9 +22,6 @@ A infraestrutura on-premise atual inclui:
 
 ### 2.1 Arquitetura de Migração
 
-
-
-
   ![Diagrama da Infraestrutura](imgs/DIagram_Migration.png)
 
 
@@ -216,12 +213,14 @@ A infraestrutura on-premise atual inclui:
 - **Amazon Backup:** Automatização de backups para EC2, EBS e RDS.
 
 ---
-  ![Diagrama Modernização](imgs/Diagram_Modern_Architeture.png)
+  ![Diagrama Modernização](imgs/Ambiente_Produção.png)
 
 ## 4. Ambientes
 
 ### 4.1 Ambiente de Desenvolvimento (Dev/Test)
-  ![Dev_Test](imgs/Ambiente_Dev_Test.png)
+
+
+  ![Ambiente de Desenvolvimento](imgs/Ambiente_Dev_Test.png)
   
 - **Recursos:**
   - Cluster EKS em uma Organizational Unit (Dev/Test OU) separada.
