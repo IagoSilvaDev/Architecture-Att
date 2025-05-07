@@ -441,13 +441,16 @@ A infraestrutura on-premise atual inclui:
 | **Elastic Load Balancing**   | 23,44              | 1 Application Load Balancer.                                                         |
 | **AWS Secrets Manager**      | 0,41               | 1 segredo, 30 dias retenção, 1K chamadas API/mês.                                    |
 | **Amazon EC2**               | 60,15              | 8 instâncias t3.small (Linux, compartilhadas), carga consistente.                    |
+| **Cloudtrail**               | 0,10               | 850.000 registros de eventos de gravação, leitura, API e Cloud Insights.               |
+| **AWS Config**               | 0,49               | AWS Config: 0,49 USD, 100 avaliações de regras, 1 avaliação de conformidade, 20 itens periódicos, 50 itens contínuo         |
+| **Amazon Guard Duty**        | 66,95              | Detecção de ameaças fundamentais (eventos de gerenciamento, logs VPC e DNS); proteção ao S3 (eventos de dados); proteção ao EKS (logs de auditoria); varredura de dados do EBS; verificações de malware do S3 (100 GB + 10.000 PUT); proteção ao RDS (8 instâncias); proteção de runtime (EKS + EC2: 8 vCPUs cada).             |
 
 ### Totais
 - **Custo Inicial Total:** 0,00 USD  
-- **Custo Mensal Total:** 2.337,64 USD *(ajustado após remoção do CodeDeploy)*  
+- **Custo Mensal Total:** 2.337,64 USD   
 - **Custo Anual (12 meses):** 28.051,68 USD
   
-  [Orçamento da Modernização](https://calculator.aws/#/estimate?id=0a52db2e4005bc1c1abfeb92a83f73cf01991044)
+  [Orçamento da Modernização](https://calculator.aws/#/estimate?id=d7a8154a3aa306ec96f810cf16c2b3e8d4afe6df)
 
 ---
 
